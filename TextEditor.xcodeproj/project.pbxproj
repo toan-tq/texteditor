@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100001 /* AppDelegate.swift */; };
+		AA000002 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100002 /* MainMenu.swift */; };
+		AA000003 /* SyntaxLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100003 /* SyntaxLanguage.swift */; };
+		AA000004 /* TabDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100004 /* TabDocument.swift */; };
+		AA000005 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100005 /* MainWindowController.swift */; };
+		AA000006 /* EditorTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100006 /* EditorTabViewController.swift */; };
+		AA000007 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100007 /* TabBarView.swift */; };
+		AA000008 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100008 /* EditorView.swift */; };
+		AA000009 /* LineNumberRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100009 /* LineNumberRulerView.swift */; };
+		AA000010 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100010 /* StatusBarView.swift */; };
+		AA000011 /* FindPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100011 /* FindPanelController.swift */; };
+		AA000012 /* FindInFilesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100012 /* FindInFilesController.swift */; };
+		AA000013 /* DirSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100013 /* DirSearchResultsView.swift */; };
+		AA000014 /* SyntaxHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100014 /* SyntaxHighlighter.swift */; };
+		AA000015 /* MarkdownHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100015 /* MarkdownHighlighter.swift */; };
+		AA000016 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100016 /* FileService.swift */; };
+		AA000027 /* FileSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100034 /* FileSearchService.swift */; };
+		AA000029 /* FileChangeBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100036 /* FileChangeBanner.swift */; };
+		AA000028 /* FileWatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100035 /* FileWatchService.swift */; };
+		AA000017 /* CrashRecoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100017 /* CrashRecoveryService.swift */; };
+		AA000018 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100018 /* PersistenceService.swift */; };
+		AA000019 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100019 /* AppTheme.swift */; };
+		AA000024 /* ConcurrencyHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100031 /* ConcurrencyHelpers.swift */; };
+		AA000025 /* StringLineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100032 /* StringLineHelpers.swift */; };
+		AA000026 /* NSTextStorageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100033 /* NSTextStorageExtensions.swift */; };
+
+		AA000023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100028 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA100001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA100002 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		AA100003 /* SyntaxLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxLanguage.swift; sourceTree = "<group>"; };
+		AA100004 /* TabDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDocument.swift; sourceTree = "<group>"; };
+		AA100005 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		AA100006 /* EditorTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTabViewController.swift; sourceTree = "<group>"; };
+		AA100007 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		AA100008 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		AA100009 /* LineNumberRulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineNumberRulerView.swift; sourceTree = "<group>"; };
+		AA100010 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		AA100011 /* FindPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPanelController.swift; sourceTree = "<group>"; };
+		AA100012 /* FindInFilesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindInFilesController.swift; sourceTree = "<group>"; };
+		AA100013 /* DirSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirSearchResultsView.swift; sourceTree = "<group>"; };
+		AA100014 /* SyntaxHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxHighlighter.swift; sourceTree = "<group>"; };
+		AA100015 /* MarkdownHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHighlighter.swift; sourceTree = "<group>"; };
+		AA100016 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		AA100034 /* FileSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearchService.swift; sourceTree = "<group>"; };
+		AA100036 /* FileChangeBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileChangeBanner.swift; sourceTree = "<group>"; };
+		AA100035 /* FileWatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatchService.swift; sourceTree = "<group>"; };
+		AA100017 /* CrashRecoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashRecoveryService.swift; sourceTree = "<group>"; };
+		AA100018 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		AA100019 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		AA100031 /* ConcurrencyHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyHelpers.swift; sourceTree = "<group>"; };
+		AA100032 /* StringLineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLineHelpers.swift; sourceTree = "<group>"; };
+		AA100033 /* NSTextStorageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextStorageExtensions.swift; sourceTree = "<group>"; };
+
+		AA100028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA100029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA100030 /* TextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA200001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA300001 /* = Begin main group = */ = {
+			isa = PBXGroup;
+			children = (
+				AA300002 /* TextEditor */,
+				AA300010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA300002 /* TextEditor */ = {
+			isa = PBXGroup;
+			children = (
+
+				AA300003 /* App */,
+				AA300004 /* Models */,
+				AA300005 /* Views */,
+				AA300006 /* Syntax */,
+				AA300007 /* Services */,
+				AA300008 /* Theme */,
+				AA30000B /* Utilities */,
+				AA100028 /* Assets.xcassets */,
+				AA100029 /* Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		AA300003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA100001 /* AppDelegate.swift */,
+				AA100002 /* MainMenu.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA300004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA100003 /* SyntaxLanguage.swift */,
+				AA100004 /* TabDocument.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA300005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA100005 /* MainWindowController.swift */,
+				AA100006 /* EditorTabViewController.swift */,
+				AA100007 /* TabBarView.swift */,
+				AA100008 /* EditorView.swift */,
+				AA100009 /* LineNumberRulerView.swift */,
+				AA100010 /* StatusBarView.swift */,
+				AA100036 /* FileChangeBanner.swift */,
+				AA100011 /* FindPanelController.swift */,
+				AA100012 /* FindInFilesController.swift */,
+				AA100013 /* DirSearchResultsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA300006 /* Syntax */ = {
+			isa = PBXGroup;
+			children = (
+				AA100014 /* SyntaxHighlighter.swift */,
+				AA100015 /* MarkdownHighlighter.swift */,
+			);
+			path = Syntax;
+			sourceTree = "<group>";
+		};
+		AA300007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA100016 /* FileService.swift */,
+				AA100034 /* FileSearchService.swift */,
+				AA100035 /* FileWatchService.swift */,
+				AA100017 /* CrashRecoveryService.swift */,
+				AA100018 /* PersistenceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA300008 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AA100019 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AA30000B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AA100031 /* ConcurrencyHelpers.swift */,
+				AA100032 /* StringLineHelpers.swift */,
+				AA100033 /* NSTextStorageExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AA300010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA100030 /* TextEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA400001 /* TextEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA600003 /* Build configuration list for PBXNativeTarget "TextEditor" */;
+			buildPhases = (
+				AA500001 /* Sources */,
+				AA200001 /* Frameworks */,
+				AA500002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextEditor;
+			productName = TextEditor;
+			productReference = AA100030 /* TextEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA400002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA400001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA600001 /* Build configuration list for PBXProject "TextEditor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA300001;
+			productRefGroup = AA300010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA400001 /* TextEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA500002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000023 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA500001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* AppDelegate.swift in Sources */,
+				AA000002 /* MainMenu.swift in Sources */,
+				AA000003 /* SyntaxLanguage.swift in Sources */,
+				AA000004 /* TabDocument.swift in Sources */,
+				AA000005 /* MainWindowController.swift in Sources */,
+				AA000006 /* EditorTabViewController.swift in Sources */,
+				AA000007 /* TabBarView.swift in Sources */,
+				AA000008 /* EditorView.swift in Sources */,
+				AA000009 /* LineNumberRulerView.swift in Sources */,
+				AA000010 /* StatusBarView.swift in Sources */,
+				AA000011 /* FindPanelController.swift in Sources */,
+				AA000012 /* FindInFilesController.swift in Sources */,
+				AA000013 /* DirSearchResultsView.swift in Sources */,
+				AA000014 /* SyntaxHighlighter.swift in Sources */,
+				AA000015 /* MarkdownHighlighter.swift in Sources */,
+				AA000016 /* FileService.swift in Sources */,
+				AA000027 /* FileSearchService.swift in Sources */,
+				AA000029 /* FileChangeBanner.swift in Sources */,
+				AA000028 /* FileWatchService.swift in Sources */,
+				AA000017 /* CrashRecoveryService.swift in Sources */,
+				AA000018 /* PersistenceService.swift in Sources */,
+				AA000019 /* AppTheme.swift in Sources */,
+				AA000024 /* ConcurrencyHelpers.swift in Sources */,
+				AA000025 /* StringLineHelpers.swift in Sources */,
+				AA000026 /* NSTextStorageExtensions.swift in Sources */,
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA700001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA700002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA700003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.visualgit.TextEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA700004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.visualgit.TextEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA600001 /* Build configuration list for PBXProject "TextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA700001 /* Debug */,
+				AA700002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA600003 /* Build configuration list for PBXNativeTarget "TextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA700003 /* Debug */,
+				AA700004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA400002 /* Project object */;
+}
